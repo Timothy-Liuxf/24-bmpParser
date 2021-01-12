@@ -1,0 +1,11 @@
+/.vs/
+/Debug/
+/Release/
+/x64/
+/*/Debug/
+/*/Release/
+/*/x64/
+/test/
+/BMPshower/dem.bmp
+BMPCharShower/img/
+BMPCharShower/*.bmp

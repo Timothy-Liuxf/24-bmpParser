@@ -1,0 +1,179 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+//Menu
+
+MAINMENU MENU
+BEGIN
+    POPUP "开始(&B)"
+    BEGIN
+        MENUITEM "文件(&F)\tCtrl+F", IDM_FILE
+        MENUITEM "停止(&P)\tCtrl+P", IDM_PAUSE
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&E)\tCtrl+E", IDM_EXIT
+    END
+    MENUITEM "使用帮助(&H)", IDM_HELP
+    MENUITEM "关于...(&A)", IDM_ABOUT
+END
+
+MAINMENU ACCELERATORS
+BEGIN
+    "^F", IDM_FILE, ASCII, NOINVERT
+    "^P", IDM_PAUSE, ASCII, NOINVERT
+    "^E", IDM_EXIT, ASCII, NOINVERT
+    "^H", IDM_HELP, ASCII, NOINVERT
+    "^A", IDM_ABOUT, ASCII, NOINVERT
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+INPUTBMP DIALOGEX 0, 0, 160, 100
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | DS_CENTER
+EXSTYLE WS_EX_STATICEDGE
+CAPTION "输入bmp文件路径"
+FONT 10, "MS Shell Dlg", 400, 0, 0x86
+BEGIN
+    LTEXT           "请输入文件路径", IDC_PLEASEINPUT, 50, 20, 80, 10
+    EDITTEXT        IDC_INPUT,30,40,100,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定", IDB_OK, 65, 70, 30, 15
+END
+
+
+LOADING DIALOGEX 0, 0, 140, 70
+STYLE WS_POPUP | WS_VISIBLE | DS_CENTER | WS_BORDER
+FONT 10, "MS Shell Dlg", 400, 0, 0x86
+BEGIN
+    CTEXT "加载中。。。\nLoading...", IDC_LOADING, 0, 25, 140, 20
+END
+
+XP BITMAP xp.bmp
+MAINICON ICON xp.ico
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "BMPshowe.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2020"
+            VALUE "OriginalFilename", "BMPshowe.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    "INPUTBMP", DIALOG
+    BEGIN
+        RIGHTMARGIN, 2
+        BOTTOMMARGIN, 9
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+INPUTBMP AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
